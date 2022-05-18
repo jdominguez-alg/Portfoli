@@ -1,0 +1,141 @@
+body {
+  background-color: black;
+}
+
+#cuello {
+  width: 170px;
+  height: 200px;
+  background-color: #F9C595;
+  border-radius:51% 49% 53% 47% / 0% 0% 100% 100%;
+  z-index: 9px;
+  margin-left: 110px;
+  margin-top: 0px;
+  position: relative;
+  }
+
+#pelo {
+width: 500px;
+height: 850px;
+background-color: #A73500;
+border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+margin: 50px auto;
+position: relative;
+}
+
+#cara {
+width:500px;
+height: 650px;
+background-color: #EDC59F;
+border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+position: absolute;
+}
+
+.ceja {
+width: 200px;
+height: 100px;
+border: 8px solid #A73500;
+border-radius: 50%;
+border-bottom: 3px solid transparent;
+border-left: 40px solid transparent;
+border-right:10px solid transparent;
+position: relative;
+float: left;
+top: 170px;
+}
+.ceja.d {
+border-left: 10px solid transparent;
+border-right:40px solid transparent;
+
+}
+
+.ojos {
+position: absolute;
+width:500px;
+z-index: 10;
+left:60px;
+top: 200px;
+}
+
+.ojo {
+background-color: #fff;
+position: relative;
+width: 150px;
+height: 80px;
+border-radius: 50%;
+float: left;
+margin-right: 70px;
+border-top: 10px solid #000;
+border-bottom: 5px solid #000;
+border-left: 1px solid transparent;
+border-right:1px solid transparent;
+}
+.ojo_externo{
+width: 75px;
+height: 70px;
+margin-top: 2px;
+margin-left: 35px;
+background-color: #516606;
+border-radius: 50%;
+border: 3px solid #3B4906;
+}
+.ojo_interno{
+width: 35px;
+height: 30px;
+background-color: #000;
+border-radius: 50%;
+margin-top: 20px;
+margin-left: 20px;
+}
+.brillo{
+width: 15px;
+height: 10px;
+background-color: #fff;
+border-radius: 50%;
+margin-top: -30px;
+margin-left: 40px;
+}
+.flequillo{
+width:380px;
+height: 500px;
+margin-top:-200px;
+margin-left: -65px;
+border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+border: 65px solid #A73500;
+position: absolute;
+border-bottom: 2px solid transparent;
+}
+#nariz{
+  width: 500px;
+  height: 500px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  border-right: 10px solid #BDA690;
+  margin-top: -60px;
+  margin-left: -310px;
+  position: relative;
+}
+
+#boca{
+width: 220px;
+height: 90px;
+margin-left: 80px;
+margin-top: 270px;
+clip-path: circle(50% at 50% 0);
+background-color: #600000;
+position: absolute;
+}
+
+#dientes{
+  width: 220px;
+  height: 25px;
+  background-color: #fff;
+  position: relative;
+}
+
+#lengua{
+  width: 200px;
+  height: 90px;
+  margin-left: 5px;
+  background-color: #CA0000;
+  clip-path: circle(50% at 50% 100%);
+  position: relative;
+}

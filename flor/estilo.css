@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #000000;
+}
+
+#flor{
+  top: 250px;
+  left: 400px;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: giro 3s infinite linear;
+  position:  absolute;
+}
+
+@keyframes giro {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+.petalo{
+  width: 180px;
+  height: 250px;
+  border-radius: 45%;
+  position: relative;
+  background-color: #E4330D;
+}
+
+.petalo.uno{
+  top: -200px;
+  left: -150px;
+  transform: rotate(-45deg);
+}
+
+.petalo.dos{
+  left:130px;
+  top: -440px;
+  transform: rotate(45deg);
+}
+
+.petalo.tres{
+  left: -150px;
+  top: -400px;
+  transform: rotate(45deg);
+}
+
+.petalo.cuatro{
+  left: 130px;
+  top: -660px;
+  transform: rotate(-45deg);
+}
+
+#tallo{
+  width: 20px;
+  height: 600px;
+  background-color: green;
+  margin-left: 465px;
+  margin-top: 400px;
+  position: absolute;
+}

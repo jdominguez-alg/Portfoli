@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+font-family: 'Fira Sans Condensed', sans-serif;
+font-weight: 400;
+}
+.clear{
+  clear:both;
+}
+/* Menú normal (desktop) */
+.normal{
+background-color: green;
+width:100%;
+}
+.normal ul{
+  list-style-type: none;
+}
+.normal ul li a{
+  text-decoration:none;
+  padding-top:20px;
+  padding-bottom:20px;
+  display:block;
+  float:left;
+  width:25%;
+  text-align: center;
+ color:black;
+ background-color: green;
+}
+.normal ul li a:hover{
+  color:white;
+  background-color: #013C14;
+}
+
+#contenedor{
+width: 90%;
+height: 600px;
+padding: 1%;
+margin: auto;
+}
+
+.modulo{
+  width: 25%;
+  height: 100px;
+  background: cyan;
+  padding: 2%;
+  margin: 2%;
+  float: left;
+}
+
+/* Menú mobile (movil) */
+.mobile ul{
+  display: none;
+}
+
+input:checked  ~ ul{
+  display:block;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  margin:20px;
+
+}
+
+label:hover{
+  background: white;
+}
+
+input:checked ~ label {
+  background: green;
+}
+
+.mobile ul{
+  margin-top:0;
+  padding: 0;
+  width: 200px;
+
+}
+
+
+.mobile ul li {
+  display: block;
+  background: green;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+.mobile ul li:hover {
+  filter: brightness(110%);
+}
+
+h1{
+  font-family: 'Bangers', cursive;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+}
+
+.mobile{
+    display:none;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    background-color: #FFC14E;
+  }
+  .normal{
+    display:none;
+  }
+  .modulo{
+    width: 90%;
+    margin: 3%;
+  }
+  .mobile{
+      display:block;
+  }
+}

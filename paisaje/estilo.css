@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+}
+
+#paisaje{
+margin: auto;
+padding: auto;
+width: 1000px;
+height: 1000px;
+background-color:#285D62;
+}
+
+#suelo{
+  width: 1000px;
+  height: 200px;
+  background-color: #1A9F00;
+  position: absolute;
+  top: 1000px;
+}
+
+#luna{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #D7D696;
+  position: relative;
+  top: 100px;
+  left: 400px;
+
+}
+.estrella{
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background-color: #7ECFD8;
+  float: left;
+  position: relative;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+@keyframes aireuno {
+ 0% {left: 150px}
+ 100% {left: 300px;}
+}
+
+@keyframes airedos {
+ 0% {left: 450px}
+ 100% {left: 550px;}
+}
+
+.estrella.uno{
+  left: 150px;
+  top: 100px;
+  animation: aireuno 4s infinite linear;
+}
+
+.estrella.dos{
+  left: 450px;
+  top:200px;
+  animation: airedos 4s infinite linear;
+}
+
+#flor{
+  top: 400px;
+  left: 400px;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: giro 3s infinite linear;
+  position:  relative;
+}
+
+@keyframes giro {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+.petalo{
+  width: 180px;
+  height: 250px;
+  border-radius: 45%;
+  position: relative;
+  background-color: #E4330D;
+}
+
+.petalo.uno{
+  top: -200px;
+  left: -150px;
+  transform: rotate(-45deg);
+}
+
+.petalo.dos{
+  left:130px;
+  top: -440px;
+  transform: rotate(45deg);
+}
+
+.petalo.tres{
+  left: -150px;
+  top: -400px;
+  transform: rotate(45deg);
+}
+
+.petalo.cuatro{
+  left: 130px;
+  top: -660px;
+  transform: rotate(-45deg);
+}
+
+#tallo{
+  width: 20px;
+  height: 400px;
+  background-color: green;
+  margin-left: 465px;
+  margin-top: 400px;
+  position: absolute;
+}
+
+@keyframes botar {
+  0% {top: 50px}
+  50% {top: 580px}
+  100% {top:50px}
+}
+
+#pelota{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  position: relative;
+  top:50px;
+  left: 850px;
+  animation: botar 2s infinite linear;
+}
+#brillo{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 50%;
+  top:9px;
+  left: 9px;
+}
